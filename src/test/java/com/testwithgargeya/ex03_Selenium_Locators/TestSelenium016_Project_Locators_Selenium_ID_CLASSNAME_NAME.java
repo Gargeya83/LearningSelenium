@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 public class TestSelenium016_Project_Locators_Selenium_ID_CLASSNAME_NAME {
     @Description("TC#1 - Verify that with invalid login, error message is displayed!")
-    @Owner("Pramod Dutta")
+    @Owner("Gargeya Borgaonkar")
     @Severity(SeverityLevel.BLOCKER)
     @Test
     public void test_vwo_login_invalid_login() {
@@ -26,7 +26,7 @@ public class TestSelenium016_Project_Locators_Selenium_ID_CLASSNAME_NAME {
 
         WebDriver driver = new ChromeDriver();
 
-        openBrowser(driver,"https://app.vwo.com");
+       // openBrowser(driver,"https://app.vwo.com");
 
         // Step 1 - Find the EMAIL ID and enter the admin@admin.com.
         // <input open Tag
@@ -66,7 +66,7 @@ public class TestSelenium016_Project_Locators_Selenium_ID_CLASSNAME_NAME {
         button_submit.click();
 
         // Step 4 - Wait some time.
-        customWait(5000);
+       // customWait(5000);
 
         // Step 5 - Verify the message error message.
         // <div
@@ -79,7 +79,7 @@ public class TestSelenium016_Project_Locators_Selenium_ID_CLASSNAME_NAME {
 
         Assert.assertEquals(error_message.getText(), "Your email, password, IP address or location did not match");
 
-        closeBrowser(driver); //Handled by CommonToAll
+       // closeBrowser(driver); //Handled by CommonToAll
 
     }
 }
