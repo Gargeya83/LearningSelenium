@@ -24,6 +24,9 @@ public class TestSelenium026_Select_Static extends CommonToAll {
            select.selectByVisibleText("Option2");
 
 
+           closeBrowser(driver);
+
+
 
 
     }
